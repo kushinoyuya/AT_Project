@@ -38,24 +38,39 @@
 #     num = [random.randint(0,1000) for _ in range(10)]
 #     print(coctail_sort(num))
 ################## Comb Sort
-def comb_sort(numbers):
-    len_numbers = len(numbers)
-    gap = len_numbers
-    swapped = True
-    while gap != 1:
-        gap = int(gap / 1.3)
-        if gap < 1:
-            gap - 1
-        swapped = False
-        for i in range(0, len_numbers - gap):
-            if numbers[i] > numbers[i + gap]:
-                numbers[i], numbers[i+gap]=numbers[i+gap],numbers[i]
-                swapped = True
-            pass
-    return numbers
-
-if __name__ == "__main__":
-    import random
-    nums = [random.randint(0,1000) for _ in range(10)]
-    comb_sort(nums)
-    print(comb_sort(nums))
+# def comb_sort(numbers):
+#     len_numbers = len(numbers)
+#     gap = len_numbers
+#     swapped = True
+#     while gap != 1:
+#         gap = int(gap / 1.3)
+#         if gap < 1:
+#             gap - 1
+#         swapped = False
+#         for i in range(0, len_numbers - gap):
+#             if numbers[i] > numbers[i + gap]:
+#                 numbers[i], numbers[i+gap]=numbers[i+gap],numbers[i]
+#                 swapped = True
+#             pass
+#     return numbers
+# if __name__ == "__main__":
+#     import random
+#     nums = [random.randint(0,1000) for _ in range(10)]
+#     comb_sort(nums)
+#     print(comb_sort(nums))
+################## Selection Sort
+# def selection_sort(numbers):
+#     len_numbers = len(numbers)
+#     for i in range(len_numbers):
+#         min_idx = i
+#         for j in range(i+1, len_numbers):
+#             for j in range(i+1, len_numbers):
+#                 if numbers[min_idx] > numbers[j]:
+#                     min_idx
+#         numbers[i],numbers[min_idx] > numbers[min_idx],numbers[i]
+#     return numbers
+# if __name__ == "__main__":
+#     import random
+#     nums = [random.randint(0,1000) for _ in range(10)]
+#     selection_sort(nums)
+#     print(selection_sort(nums))
