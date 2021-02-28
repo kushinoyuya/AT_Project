@@ -1,4 +1,3 @@
-# 講義
 from typing import List
 
 def selection_sort(numbers: List[int])-> List[int]:
